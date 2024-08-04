@@ -1,0 +1,58 @@
+#menu header{
+    border-bottom: 1px solid var(--blue);
+}
+#menu #content{
+    padding: 0 5%;
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+}
+.menu-page-title, .menu-page-description{
+    align-self: center;
+}
+.menu-page-description{
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+#menu .cocktail-container, #menu .pizza-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+#menu .cocktail, #menu .pizza{
+    flex-grow: 1;
+    max-width: 450px;
+    min-width: 350px;
+}
+
+#menu .cocktail > img, #menu .pizza > img{
+    max-height: 300px;
+    padding-bottom: 1rem;
+}
+
+#menu .info{
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch;
+    border-top: 3px solid var(--orange);
+    padding-top: 1rem;
+}
+#menu .info > .wrapper > p{
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+}
+#menu .info ul{
+    list-style-type: none;
+}
+#menu .info ul li:before{
+    content: "- ";
+}
+#menu .price{
+    font-size: 2rem;
+    font-weight: bold;
+    align-self: flex-end;
+}

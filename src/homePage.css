@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* sections */
+#home section{
+    padding: 2rem 5%
+}
+#home .hero-section{
+
+    background-color: hsl(0,0%,0%,0.7);
+    background-blend-mode: multiply;
+    background-image: url("./img/hero-img.jpg");
+    height: calc(100vh - 3rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--cream);
+}
+
+/* hero section */
+
+#home .hero-section p{
+    font-size: 2rem;
+    opacity: 0.8;
+}
+
+/* products section */
+#home .products-section{
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#home .cocktails-container, .pizzas-container{
+    align-self: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.cocktail, .pizza{
+    padding: 1rem;
+    border-radius: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow);
+    border: 5px solid var(--orange);
+    min-width: 250px;
+    max-width: 300px;
+}
+
+#home .cocktail > img{
+    max-height: 200px;
+
+}
+#home .pizza > img{
+    max-height: 200px;
+}
+
+/* call-to-action-section */
+
+#home .call-to-action-section > .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--blue);
+    color: var(--cream);
+    border-radius: 1rem;
+}
+#home .call-to-action-section > .wrapper > h2{
+    font-size: 1.5rem;
+    padding: 0;
+}
+#home form{
+    display: flex;
+
+}
+#home .form-control{
+    display: flex;
+    flex-direction: column;
+}
+#home form label{
+    margin-bottom: 0.2rem;
+}
+#home form input {
+    margin-right: 2rem;
+    border: none;
+    padding: 0.2rem 1rem;
+    border-radius: 269px;
+    font-family: inherit;
+}
+#home form > button{
+    align-self: flex-end;
+    padding: 0.2rem 1rem;
+    border: none;
+    border-radius: 269px;
+    font-family: inherit;
+    font-weight: bold;
+    background-color: var(--yellow);
+}
+
+@media screen and (max-width: 800px){
+    #home form{
+       flex-direction: column;    
+    }
+    #home .call-to-action-section > .wrapper{
+        align-items: stretch;
+    }
+    #home .form-control{
+        margin-bottom: 1rem;
+    }
+    #home form input{
+        margin-right: 0;
+    }
+    #home form > button{
+        align-self: stretch;
+    }
+    #home .hero-section p{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
